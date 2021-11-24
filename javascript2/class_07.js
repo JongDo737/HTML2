@@ -28,8 +28,6 @@ console.log(counter);
 console.log(--counter);
 
 
-
-
 //++counter, counter++;
 let a = 1;
 let b = 2;
