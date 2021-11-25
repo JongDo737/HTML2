@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex-wrap : nowrap | wrap | wrap-reverse  */
+        .parents {
+            border: 5px solid green;
+            display: flex;
+            /* 기본값 : 창이 줄어들면 사이즈 변경됌 */
+            flex-wrap: nowrap;
+            /* 사이즈를 유지하면서 밑으로 떨어짐 */
+            flex-wrap: wrap;
+            /* 역방향으로 떨어짐 */
+            flex-wrap: wrap-reverse;
+        }
+
+        .parents div {
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            background-color: crimson;
+            text-align: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parents">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+        <div class="child4">4</div>
+        <div class="child5">5</div>
+        <div class="child6">6</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents {
+            border: 5px solid green;
+            display: flex;
+
+        }
+
+        .parents div {
+            height: 100px;
+            background-color: crimson;
+            text-align: center;
+            margin-left: 10px;
+            color: white;
+        }
+
+        .child1 {
+            /* flex-grow: 1; */
+            /*전체의 4분의 1 */
+            flex-grow: 2;
+        }
+
+        .child2 {
+            /* flex-grow: 2; */
+            /* 전체의 4분의 2 */
+            flex-grow: 6;
+        }
+
+        .child3 {
+            /* flex-grow: 1; */
+            /* 전체의 4분의 1 */
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parents">
+        <div class="child1">child1</div>
+        <div class="child2">child2</div>
+        <div class="child3">child3</div>
+    </div>
+</body>
+
+</html>
