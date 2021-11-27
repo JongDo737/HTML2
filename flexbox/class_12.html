@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,4 +52,59 @@
     </div>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents {
+            border: 5px solid green;
+            display: flex;
+
+        }
+
+        .parents div {
+            height: 200px;
+            color: #fff;
+            text-align: center;
+            background-color: crimson;
+            line-height: 200px;
+            margin: 1px;
+
+        }
+
+        /* 
+            flex-basis : auto <--기본값
+            플렉스 자식요소 공간 배분 전 기본 너비 설정
+        
+        */
+        .child1 {
+            flex-basis: 100px;
+        }
+
+        .child2 {
+            flex-basis: 200px;
+        }
+
+        .child3 {
+            flex-basis: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parents">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+    </div>
+</body>
+
+>>>>>>> f848601ea65e2de47e71cbe2c851ea77a98a9c76
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,4 +33,40 @@
     <a href="#;" onclick="info()">주민등록번호</a>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function info() {
+            let jumin = prompt("주민등록번호(xxxxxx-xxxxxxx", "");
+            // prompt 사용자에게 입력을 받을 수 있게함
+            if (jumin.charAt(6) != '-') {
+                alert("주민등록번호 형식이 잘못됌");
+            }
+            let b = jumin.charAt(7);
+            let d = "";
+            switch (b) {
+                case '1':
+                    d = "남성";
+                    break;
+                case '2':
+                    d = "여성";
+                    break;
+            }
+            alert("성별 : " + d);
+        }
+    </script>
+</head>
+
+<body>
+    <a href="#;" onclick="info()">주민등록번호</a>
+</body>
+
+>>>>>>> f848601ea65e2de47e71cbe2c851ea77a98a9c76
 </html>

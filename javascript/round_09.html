@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,4 +31,38 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function aaa() {
+            document.write("매개변수가 없는 함수 <br>");
+        }
+        function bbb(x, y) {
+            document.write(x + "값과 " + y + "값이 전달된 함수 호출<br>");
+        }
+        function ccc(z) {
+            document.write(z + "값에 100을 덧셈해서 되돌려주는 함수<br>");
+            return z + 100;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>스크립트 테스트</h1>
+    <script>
+        aaa();
+        bbb(23, 19);
+        let returnValue = ccc(35);
+        document.write("returnValue : " + returnValue);
+    </script>
+</body>
+
+>>>>>>> f848601ea65e2de47e71cbe2c851ea77a98a9c76
 </html>
