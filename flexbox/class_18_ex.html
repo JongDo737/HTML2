@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+
+        }
+
+        header {
+            background-color: tomato;
+            padding: 10px;
+            flex: 1;
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        .main {
+            background-color: gray;
+            flex: 4;
+            order: 2;
+            padding: 30px 10px;
+        }
+
+        .left {
+            background-color: gold;
+            flex: 1;
+            order: 1;
+            padding: 10px;
+        }
+
+        .right {
+            background-color: green;
+            flex: 1;
+            order: 3;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: aqua;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .main {
+                order: 1;
+                padding: 10px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+
+    <section class="container">
+        <article class="main">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quis impedit dolorem inventore incidunt nam accusamus,
+                ad dolorum libero rem temporibus maiores similique accusantium
+                eum quos dolores exercitationem deserunt ducimus? Distinctio.</p>
+        </article>
+        <article class="left">Aside1</article>
+        <article class="right">Aside2</article>
+    </section>
+    <footer>Footer</footer>
+</body>
+
+</html>
