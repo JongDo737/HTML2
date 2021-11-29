@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            display: flex;
+            border: 5px solid red;
+            width: 33.33%;
+            height: 200px;
+
+        }
+
+        .box div {
+            display: flex;
+            flex: 1;
+        }
+
+        .yellow {
+            background-color: gold;
+
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="yellow">1</div>
+            <div class="green">2</div>
+        </div>
+        <div class="box">
+            <div class="yellow">3</div>
+            <div class="green">4</div>
+        </div>
+        <div class="box">
+            <div class="yellow">5</div>
+            <div class="green">6</div>
+        </div>
+    </div>
+</body>
+
+</html>
