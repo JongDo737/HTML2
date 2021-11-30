@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // // 지역변수
+        // function showMessage() {
+        //     let message = "안녕하세요";
+        //     alert(message);
+        // }
+
+        // alert(message);
+        // //함수 내에서 선언한 변수인 지역변수는 함수 안에서만 접근 할 수 있다.
+
+        // 외부 변수
+        // let userName = 'John';
+        // function showMessage() {
+        //     let message = 'Hello' + userName;
+        //     alert(message);
+        // }
+
+        // let userName = 'John';
+        // function showMessage() {
+        //     userName = "Bob";
+        //     let message = 'Hello, ' + userName;
+        //     alert(message);
+        // }
+
+        // // 생각 !!
+        // alert(userName);    //John
+        // showMessage();      //Hello, Bob
+        // alert(userName);    //Bob
+
+        let userName = 'John';
+        function showMessage() {
+            let userName = "Bob";   //외부변수와 같은 이름을 가진 지역 변수
+            let message = 'Hello. ' + userName;
+            alert(message);
+        }
+        showMessage();
+        alert(userName);
+
+
+
+    </script>
+</head>
+
+<body>
+    <script>
+        // showMessage();
+    </script>
+</body>
+
+</html>
