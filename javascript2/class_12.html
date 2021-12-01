@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 화살표 함수 
+
+        // let sum = function (a, b) {
+        //     return a + b;
+        // }
+        // alert(sum(100, 1000));
+
+        // 좀 더 간결하게 사용하는 방법
+
+        let sum = (a, b) => a + b;
+
+        // alert(sum(100, 1000));
+
+        // let double = n => n * 2;
+
+        // let double = function (n) {
+        //     return n * 2;
+        // }
+
+        let sayHi = () => alert("안녕하세요");
+        // sayHi();
+
+        // let age = prompt("당신의 나이를 알려 주세요", 19);
+
+        // let welcome = (age < 19) ?
+        //     () => alert("안녕") :
+        //     () => alert("안녕하세요");
+
+        // welcome();
+
+        // let num = prompt("당신의 나이를 알려주세요", 20);
+        // let welcome = (num >= 20) ?
+        //     () => alert("성인입니다.") :
+        //     () => alert("청소년입니다.");
+
+        // welcome();
+
+        // let sum2 = (a, b) => {   // 중괄호는 본문이 여러줄로 구성된다고 알려줌
+        //     let result = a + b;
+        //     return result;      // 중괄호 안에서는 리턴값을 써줘야함
+        // }
+
+        // alert(sum2(88, 12));
+
+        let sum3 = (a, b) => {
+            let result = a + b;
+            return result;
+        }
+        alert(sum(1284, 208));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
