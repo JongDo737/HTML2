@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // JSON
+        // Java Script Object Notation
+
+        // 클라이언트 - 서버
+        // 자바스크립트 형태로 올리면 문법이 다르기 때문에 해석할 수 없음
+
+        // 규칙, 야ㅑㄱ속, 표준을 만든게 JSON 형식
+
+        //why 사람이 이해하기도 쉽고 컴퓨터도 이해하기 쉬움  데이터 용량도 작음
+        //var person = {"height" : 180, "job" : "programmer"}
+
+        // let user = {
+        //     name : "John",
+        //     age : 30
+
+        //     toString(){     //굉장히 불편한 작업
+        //         return '{name : "${this.name}"}, '
+        //     }
+        // };
+        // console.log(user); 출력 : Object
+
+        let student = {
+            name: "jong",
+            age: 22,
+            isAdmin: false,
+            courses: ['html', 'css', 'js'],
+            wife: null
+        };
+        //JSON 형태로 변환
+        // --> 객체를 문자열로 변경 --> JSON 형식을 가진 문자열로 변환한다.
+        let json = JSON.stringify(student);
+        console.log(json);
+        console.log(typeof (json));
+
+        // 객체 {...}
+        // 배열 [...]
+        // 원시형 :
+        //문자형
+        //숫자형
+        //불린형
+        //null
+
+        // JSON.parse
+        // JSON으로 인코딩된 객체를 다시 객체로 디코딩 한다.
+
+        //JSON 형식
+        let userData = '{"name": "John", "age": 35, "isAdmin": true}';
+
+        // 다시 객체로 만들어주는 과정
+        let user = JSON.parse(userData);
+        alert(user.name);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

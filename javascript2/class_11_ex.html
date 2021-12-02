@@ -7,22 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function ask(question, yes, no) {
+        // function ask(question, yes, no) {
+        //     if (confirm(question)) {
+        //         yes();
+        //     }
+        //     else {
+        //         no();
+        //     }
+        // }
+        // function sayYes() {
+        //     alert("동의 하셨습니다.");
+        // }
+        // function sayNo() {
+        //     alert("취소하셨습니다.");
+        // }
+        // ask("동의 하시겠습니까?", sayYes, sayNo);
+
+        let ask = (question, yes, no) => {
             if (confirm(question)) {
                 yes();
             }
             else {
                 no();
             }
+        }
+        let sayyes = () => alert("동의하셨습니다.");
+        let sayno = () => alert("취소하셨습니다.");
+        ask("동의 하시겠습니까?", sayyes, sayno);
 
-        }
-        function sayYes() {
-            alert("게임을 실행합니다.");
-        }
-        function sayNo() {
-            alert("취소합니다.");
-        }
-        ask("게임을 실행 하시겠습니까", sayYes, sayNo);
     </script>
 </head>
 
