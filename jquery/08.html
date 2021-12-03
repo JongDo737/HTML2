@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            //on 을 쓰면 한번에 묶어서 사용할 수 있음
+            $("p").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function () {
+                    $(this).css("background-color", "gold");
+                }
+            });
+
+
+        });
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam exercitationem odio quaerat expedita magnam
+        placeat doloribus, dolorem assumenda debitis quisquam doloremque dolorum consequatur, error ab blanditiis
+        deleniti eius corporis rerum?
+        Provident similique cupiditate autem dolorem officiis voluptates explicabo saepe animi quidem? Aliquid, optio
+        consectetur voluptatum non dolorem adipisci provident, dolorum laboriosam nam omnis ex odio numquam iusto animi
+        sit maiores.
+        Impedit aut minus velit excepturi, assumenda nulla est, atque eaque consectetur omnis beatae qui, distinctio
+        quod quasi earum quia iusto? Recusandae adipisci laboriosam fuga temporibus. Fuga impedit praesentium
+        consequatur tempora?
+        Blanditiis obcaecati impedit voluptate molestiae iste et commodi maxime cupiditate. Iure est at omnis, sit ullam
+        nobis accusamus dolorem quos recusandae quo cupiditate dolore id porro ad officia modi rerum?
+        Rerum distinctio itaque nisi harum expedita, eius similique sapiente fugit iste accusantium. Rem blanditiis non,
+        tempore obcaecati adipisci rerum ea, voluptatum voluptatibus exercitationem, officia perspiciatis a sunt illum
+        commodi itaque!</p>
+
+</body>
+
+</html>

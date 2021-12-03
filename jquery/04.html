@@ -15,7 +15,12 @@
             $("tr:even").css("background-color", "yellow");
             $("button").click(function () {
                 $("tr:odd").css("background-color", "green");
-
+                $("button").click(function () {
+                    $("tr:even").css("background-color", "crimson");
+                    $("button").click(function () {
+                        $("tr:odd").css("background-color", "gold");
+                    });
+                });
             });
         });
 

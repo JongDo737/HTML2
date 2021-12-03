@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        /***
+         * 이벤트
+         * DOM 몇가지 만들어주는 이벤트
+         * click
+         * dblclick
+          * mouseenter
+          * mouseleave
+          *
+          */
+        $(document).ready(function () {
+
+            // $("#p1").mouseenter(function () {
+            //     alert("마우스가 들어왔네요 !");
+
+
+            // });
+            // $("#p1").mouseleave(function () {
+            //     alert("마우스가 나갔네요 !");
+
+
+            // });
+            $("#p1").mouseenter(function () {
+                $(this).hide();
+                $(this).mouseleave(function () {
+                    $(this).show();
+                    $(this).css("color", "gold");
+
+                });
+            });
+
+            $("#p1").hover()
+
+        });
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <p id="p1">여기에 마우스를 가지고 오세요 !!</p>
+</body>
+
+</html>

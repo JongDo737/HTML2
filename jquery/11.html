@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#flip").click(function () {
+                $("#panel").slideDown("slow");
+
+
+            });
+            $("#flip").click(function () {
+                $("#panel").slideUp("slow");
+
+            });
+
+
+            $(".click").click(function () {
+                $(".slide").slideToggle(1000);
+            });
+
+        });
+
+
+
+
+
+
+    </script>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: 1px solid #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+
+
+
+        .click,
+        .slide {
+            padding: 5px;
+            background-color: gold;
+            text-align: center;
+            border: 1px solid green;
+        }
+
+        .click {
+            margin-top: 50px;
+        }
+
+        .slide {
+            padding: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="flip">click to slide down panel</div>
+    <div id="panel">Hello world!!</div>
+
+    <div class="click">눌러보세용</div>
+    <div class="slide">간다아아아</div>
+
+</body>
+
+</html>
