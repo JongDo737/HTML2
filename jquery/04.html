@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            //css 속성
+            $("tr:even").css("background-color", "yellow");
+            $("button").click(function () {
+                $("tr:odd").css("background-color", "green");
+
+            });
+        });
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Welcome to my Web page</h1>
+    <table border="1">
+        <tr>
+            <th>Company</th>
+            <th>country</th>
+        </tr>
+        <tr>
+            <td>삼성</td>
+            <td>대한민국</td>
+        </tr>
+        <tr>
+            <td>LG</td>
+            <td>대한민국</td>
+        </tr>
+        <tr>
+            <td>Meta</td>
+            <td>미국</td>
+        </tr>
+        <tr>
+            <td>페이팔</td>
+            <td>미국</td>
+        </tr>
+
+
+    </table>
+    <p>버튼이 눌러졌을 때 색상을 변경</p>
+    <button>Click me</button>
+</body>
+
+</html>

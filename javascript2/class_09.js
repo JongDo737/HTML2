@@ -28,4 +28,4 @@ let name2 = 'jong';
 let name3 = 'min';
 
 let myName4 = name1 ?? name2 ?? name3;
-console.log(myName4)
+console.log(myName4);
